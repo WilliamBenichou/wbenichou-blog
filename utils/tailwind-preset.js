@@ -103,4 +103,12 @@ module.exports = {
     },
   },
   plugins: [hoveredSiblingPlugin, pluginTypography, themesConfig],
+  async rewrites() {
+    return [
+      {
+        source: '/privacy-policy',
+        destination: '/privacy-policy.js',
+      },
+    ];
+  },
 };
